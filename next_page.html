@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Feedback Page</title>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 28px;
+    }
+
+    .feedback-container {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .feedback-text {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .feedback-input {
+      width: 300px;
+      height: 150px;
+      padding: 10px;
+      font-size: 16px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      resize: none;
+    }
+
+    .submit-button {
+      padding: 10px 20px;
+      background-color: #eb8e28;
+      color: #000;
+      font-size: 16px;
+      font-weight: bold;
+      border: none;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>We are improving ourselves.</h1>
+  <div class="feedback-container">
+    <p class="feedback-text">Your feedback will help us improve our products and services.</p>
+    <textarea class="feedback-input" placeholder="Leave your feedback here"></textarea>
+    <button class="submit-button" onclick="window.location.href = 'thankyou_page.html'">Submit</button>
+  </div>
+</body>
+</html>

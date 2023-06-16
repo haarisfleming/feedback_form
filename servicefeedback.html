@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Service Feedback</title>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 28px;
+    }
+
+    .feedback-buttons {
+      margin-top: 20px;
+    }
+
+    .feedback-button {
+      padding: 10px 20px;
+      color: #000;
+      font-size: 16px;
+      cursor: pointer;
+      margin: 5px;
+    }
+
+    .excellent-button {
+      background-color: #00FF06;
+    }
+
+    .good-button {
+      background-color: #85F488;
+    }
+
+    .average-button {
+      background-color: #FFA500;
+    }
+
+    .below-average-button {
+      background-color: #FF6900;
+    }
+
+    .poor-button {
+      background-color: #FF2D00;
+    }
+  </style>
+  <script>
+    function redirectToGoogleReviews() {
+      // Show a popup message
+      alert("We are redirecting you to Google!");
+
+      // Redirect the user to the Google Reviews page
+      window.location.href = "https://www.google.com/search?q=down+to+deliver&oq=down&aqs=chrome.3.69i60j69i57j0i433i512j69i59l2j69i60l3.2278j0j7&sourceid=chrome&ie=UTF-8#lrd=0x809ac54e7400eeb5:0xc313875b909eef69,3,,,";
+    }
+  </script>
+</head>
+<body>
+  <h1>How do you like our service?</h1>
+  <div class="feedback-buttons">
+    <button class="feedback-button excellent-button" onclick="redirectToGoogleReviews()">Excellent</button>
+    <button class="feedback-button good-button" onclick="redirectToGoogleReviews()">Good</button>
+    <button class="feedback-button average-button" onclick="window.location.href = 'next_page.html'">Average</button>
+    <button class="feedback-button below-average-button" onclick="window.location.href = 'next_page.html'">Below Average</button>
+    <button class="feedback-button poor-button" onclick="window.location.href = 'next_page.html'">Poor</button>
+  </div>
+</body>
+</html>
